@@ -8,8 +8,8 @@ let palavra_jogo = palavra();
 let tentativa = 1;
 let jogada = 0;
 
-function palavra() {
-    const lista_palavras = [
+function palavra (){
+    const palavras = [
     // FÁCEIS
     "BOLA", "CASA", "DADO", "FOGO", "GATO", "LEAO", "MESA", "PATO", "ROSA", "SOL",
     "AGUA", "BOLO", "COPO", "DOCE", "FADA", "GELO", "ILHA", "JOGO", "LAMA", "MAO",
@@ -24,7 +24,7 @@ function palavra() {
     "ASTRONAUTA", "BIBLIOTECA", "CONSTITUIÇÃO", "DESENVOLVIMENTO", "ESPECTRO", "FILOSOFIA", "GUILHOTINA", "HEMISFERIO", "INCONSTITUCIONAL", "JURISPRUDENCIA",
     "LABIRINTO", "METAMORFOSE", "NASCIMENTO", "ORNITORRINCO", "PSICOLOGIA", "QUILOMETRO", "REESTRUTURAR", "SINTETIZADOR", "TRANSCENDENTAL", "UNIVERSIDADE"
     ];
-    
+
     return palavras[Math.floor(Math.random()*palavras.length)];
 
 }
