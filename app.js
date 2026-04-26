@@ -8,24 +8,21 @@ let palavra_jogo = palavra();
 let tentativa = 1;
 let jogada = 0;
 
-function palavra (){
 function palavra() {
-    const palavras = [
-        // FÁCEIS (50 palavras - Curtas e comuns)
-        "BOLA", "CASA", "DADO", "FOGO", "GATO", "LEAO", "MESA", "PATO", "ROSA", "SOL",
-        "AGUA", "BOLO", "COPO", "DOCE", "FADA", "GELO", "ILHA", "JOGO", "LAMA", "MAO",
-        "NAVE", "OLHO", "PAO", "RATO", "SUCO", "TELA", "UVA", "VACA", "ZEBRA", "AZUL",
-        "CAFE", "DEDO", "FACA", "GOLA", "HOJE", "LAGO", "MATO", "NETO", "OVOS", "PIPA",
-        "REI", "SOPA", "TREM", "URSO", "VASO", "XALE", "YOGA", "ZERO", "ARPA", "BALA",
-
-        // MÉDIAS (30 palavras - Comprimento médio)
-        "ABACAXI", "BANANA", "CIDADE", "DENTISTA", "ESCOLA", "FLECHA", "GIRAFFA", "HOTEL", "IGREJA", "JARDIM",
-        "LIVRO", "MOEDA", "NUVEM", "ONIBUS", "PARQUE", "QUEIJO", "ROUPA", "SAPATO", "TIJOLO", "URANO",
-        "VIAGEM", "XADREZ", "ALUNO", "BOTAO", "CHAVE", "DRAGAO", "ESMERALDA", "FESTA", "GRITAR", "HUMANO",
-
-        // DIFÍCEIS (20 palavras - Longas ou complexas)
-        "ASTRONAUTA", "BIBLIOTECA", "CONSTITUIÇÃO", "DESENVOLVIMENTO", "ESPECTRO", "FILOSOFIA", "GUILHOTINA", "HEMISFERIO", "INCONSTITUCIONAL", "JURISPRUDENCIA",
-        "LABIRINTO", "METAMORFOSE", "NASCIMENTO", "ORNITORRINCO", "PSICOLOGIA", "QUILOMETRO", "REESTRUTURAR", "SINTETIZADOR", "TRANSCENDENTAL", "UNIVERSIDADE"
+    const lista_palavras = [
+    // FÁCEIS
+    "BOLA", "CASA", "DADO", "FOGO", "GATO", "LEAO", "MESA", "PATO", "ROSA", "SOL",
+    "AGUA", "BOLO", "COPO", "DOCE", "FADA", "GELO", "ILHA", "JOGO", "LAMA", "MAO",
+    "NAVE", "OLHO", "PAO", "RATO", "SUCO", "TELA", "UVA", "VACA", "ZEBRA", "AZUL",
+    "CAFE", "DEDO", "FACA", "GOLA", "HOJE", "LAGO", "MATO", "NETO", "OVOS", "PIPA",
+    "REI", "SOPA", "TREM", "URSO", "VASO", "XALE", "YOGA", "ZERO", "ARPA", "BALA",
+    // MÉDIAS
+    "ABACAXI", "BANANA", "CIDADE", "DENTISTA", "ESCOLA", "FLECHA", "GIRAFFA", "HOTEL", "IGREJA", "JARDIM",
+    "LIVRO", "MOEDA", "NUVEM", "ONIBUS", "PARQUE", "QUEIJO", "ROUPA", "SAPATO", "TIJOLO", "URANO",
+    "VIAGEM", "XADREZ", "ALUNO", "BOTAO", "CHAVE", "DRAGAO", "ESMERALDA", "FESTA", "GRITAR", "HUMANO",
+    // DIFÍCEIS
+    "ASTRONAUTA", "BIBLIOTECA", "CONSTITUIÇÃO", "DESENVOLVIMENTO", "ESPECTRO", "FILOSOFIA", "GUILHOTINA", "HEMISFERIO", "INCONSTITUCIONAL", "JURISPRUDENCIA",
+    "LABIRINTO", "METAMORFOSE", "NASCIMENTO", "ORNITORRINCO", "PSICOLOGIA", "QUILOMETRO", "REESTRUTURAR", "SINTETIZADOR", "TRANSCENDENTAL", "UNIVERSIDADE"
     ];
     
     return palavras[Math.floor(Math.random()*palavras.length)];
