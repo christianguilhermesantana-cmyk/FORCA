@@ -27,11 +27,7 @@ function palavra() {
         "ASTRONAUTA", "BIBLIOTECA", "CONSTITUIÇÃO", "DESENVOLVIMENTO", "ESPECTRO", "FILOSOFIA", "GUILHOTINA", "HEMISFERIO", "INCONSTITUCIONAL", "JURISPRUDENCIA",
         "LABIRINTO", "METAMORFOSE", "NASCIMENTO", "ORNITORRINCO", "PSICOLOGIA", "QUILOMETRO", "REESTRUTURAR", "SINTETIZADOR", "TRANSCENDENTAL", "UNIVERSIDADE"
     ];
-
-    // IMPORTANTE: Mudei o 20 para palavras.length para ele sortear entre as 100
-    return palavras[Math.floor(Math.random() * palavras.length)];
-}
-
+    
     return palavras[Math.floor(Math.random()*palavras.length)];
 
 }
