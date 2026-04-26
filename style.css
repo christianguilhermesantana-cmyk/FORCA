@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Relief", system-ui;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+   display: flex;
+   flex-direction: column; 
+   width: 90%;
+   align-items: center;
+   border-radius: 15px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imagens {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+}
+
+.teclado {
+    margin: 5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 10%;
+    height: 10%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+#reset {
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: antiquewhite;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.ja-foi {
+    display: flex;
+    height: 60px;
+}
+
+.titulo_h3 {
+    margin: 5%;
+}
+
+@media (min-width: 768px){
+    .card {
+        width: 50%;
+        height: auto;
+        max-height: 90vh;
+    }
+
+    .imagens {
+        width: 350x;
+        height: 250px;
+        border: 1px solid black;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .teclado {
+        margin: 30px;
+    }
+
+    .btn {
+        width: 25px;
+        height: 25px;
+    }
+}
